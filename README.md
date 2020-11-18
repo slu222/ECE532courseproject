@@ -12,12 +12,7 @@ This report is organized as following. We  first introduce the dataset we use in
 
 The dataset we adopt in this experiment is Human Activity Recognition Using Smartphones Dataset  (Anguita et al., 2013).  The dataset was collected by a se-  ries of experiments. The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activi- ties (WALKING, WALKING UPSTAIRS, WALKING DOWNSTAIRS, SITTING,
 STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, the authors of Anguita et al. (2013) captured 3-axial linear acceleration and 3-axial angular velocity at a con- stant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
-The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravita- tional and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was
- 
-
-
-
-used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravita- tional and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 Finally, there are 10299 samples in the dataset, 7352 for training set, and 2947 for test set. Each sample contains a feature of 561 dimension, and a label ranging from 1 to 6, indicting which activitiy the sample is.
 
 3	LEAST  SQUARES METHOD
@@ -32,13 +27,7 @@ For this method, we practice the cross-validation instead of using the existing 
 Methods	M1	M2	M3	M4 Error Rate	0.493	0.505	0.631	0.493
 Table 1: Four cross validation results for least squares method.
 
-The best result is obtained in M1 and M4. However, all 4 results are not that good, which are both close to and even  larger than 50%.   We  claim that the result for   this bad result is the complexity of the data. The features of the data are complex parameters with two attributes of time domain and frequency domain, so the re-  sults do not show high similarity in dynamic and static motion states as expected.In
-1https://www.python.org/
- 
-
-
-
-other words, due to the influence of factors such as the age and height of the first measured object, sensor parameters in the mobile phone may be unable to display highly consistent representative parameters in static and dynamic states due to the difference in human motion amplitude.
+The best result is obtained in M1 and M4. However, all 4 results are not that good, which are both close to and even  larger than 50%.   We  claim that the result for   this bad result is the complexity of the data. The features of the data are complex parameters with two attributes of time domain and frequency domain, so the re-  sults do not show high similarity in dynamic and static motion states as expected.In other words, due to the influence of factors such as the age and height of the first measured object, sensor parameters in the mobile phone may be unable to display highly consistent representative parameters in static and dynamic states due to the difference in human motion amplitude.
 
 4	CLUSTERING  BASED METHOD
 

@@ -3,10 +3,14 @@
 1	INTRODUCTION
 
 Machine learning is popular and has been successfully applied in a large amount of fields. Among the various techniques of machine learning, classification is a very basic but useful direction. A lot of algorithms for classification has been created.  In this project,the Human Activity Recognition Using Smartphones Dataset(https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+SmartpHones#) is chosen as the dataset which is conducted experiments on. 
+
+
 3 kinds of algorithms are picked and implemented to complete the classification task. They are:
 •	Least squares method
 •	Clustering based method
 •	Neural network method
+
+
 #Due to the large size of data, it is necessary to go to the dataset address to download the original data set. This Github page only provides the codes of three algorithms.
 
 2	DATASET

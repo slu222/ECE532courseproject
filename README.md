@@ -42,7 +42,9 @@ Use the least-squares method with the training dataset to calculate weights for 
 Since the lowest value of the result is still close to 50%, similar calculations are carried out for each feature of the data. The results showed that even if only one feature of any 561 was used to calculate the corresponding Weight applied to test dataset, the error rate was still greater than or close to 50%.The reason for this high error rate may be that the features of the data are complex parameters with two attributes of time domain and frequency domain, so the results do not show high similarity in dynamic and static motion states as expected. In other words, due to the influence of factors such as the age and height of the first measured object, sensor parameters in the mobile phone may be unable to display highly consistent representative parameters in static and dynamic states due to the difference in human motion amplitude.
 
   Methods  	    M1	    M2	    M3	  M4  
+  
 Error Rate 	 0.770	 0.460	 0.463	0.458
+
 Table 1: Four cross validation results for least squares method.
 
 
@@ -61,7 +63,9 @@ may prove that static and dynamic states are not distinct enough when all sensor
 
    
    K        2       6
+   
 Error Rate  0.472  0.639
+
 Table 2: Two results for different K values in K-Means algorithm.
 
 
@@ -77,11 +81,15 @@ Using the ReLU function: f(x)=max (0, x). The output of this network is 2 or 6 n
 This algorithms gives much smaller error rates on both 2 labels and 6 labels cases. This shows that the neural network algorithm may be more suitable for the complex features of the original data.
 
 Batch size	   4	       8	       16	      32	      64	        128
+
 Error rate	41.500%	  16.899%	  12.759%	  12.487%	   40.245%	  53.207%
+
 Table 3: Error rate of Adam algorithm for 6 labels with different batch size.
 
 Batch size	    4	        8	        16	      32	     64	     128
+
 Error rate	 53.207%	 53.377%	 53.241%	 53.920% 	77.796%	  65.796%
+
 Table 4: Error rate of SGD algorithm for 6 labels with different batch size.
 
 

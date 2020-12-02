@@ -19,7 +19,7 @@ The dataset adopted in this experiment is Human Activity Recognition Using Smart
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravita- tional and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 Finally, there are 10299 samples in the dataset, 7352 for training set, and 2947 for test set. Each sample contains a feature of 561 dimension, and a label ranging from 1 to 6, indicting which activitiy the sample is.
 
-3	least-squares linear regression algorithm part
+3	LEAST-SQUARES LINEAR REGRESSION ALGORITHM
 
 The least squares method is a linear model, which learns coefficients (or weights) for each feature. It multiplies weights and the values of corresponding feature, adds a bias added, to get a target value. This can be formulated as:
 
@@ -46,8 +46,7 @@ Error Rate 	 0.770	 0.460	 0.463	0.458
 Table 1: Four cross validation results for least squares method.
 
 
-
-4.	K-mean algorithm part
+4 K-MEAN ALGORITHM
 
 The clustering method used is K-Means algorithm (MacQueen et al., 1967; Hartigan & Wong, 1979). Given a set of samples, which can be regarded as points in high dimensional space, K-Means first sample k points as k center points. Then each point will be assigned to the center point which is the closest to itself. By this way,obtaining k clusters  of nodes. For each cluster, getting its center point by computing the mean position of the points in this cluster. Now there are k new center points. Repeating the above procedure until the center points won’t change. It is proved that the iteration can be done in finite steps. Once it is stopped, obtainning k clusters.
 
@@ -66,7 +65,7 @@ Error Rate  0.472  0.639
 Table 2: Two results for different K values in K-Means algorithm.
 
 
-5.	Neural Network algorithm
+5 NEURAL NETWORK ALGORITHM
 
 As mentioned earlier, this part uses the processed training data set and processed test set which has 561 features. Seventy percent of the total data is used to train the network, and the remaining 30 percent is used to calculate the error rate to determine whether the network is working well. This project trained the neural network under two conditions. One is using the original 6 labels for 6 different activities, and another case is reassigning 0 as labels to data with 1-3 labels, and considering these activities as activate state and others are the static state with new label 1.
 

@@ -60,7 +60,8 @@ k of 6 represents the problem is a 6-labels classification task. k of2 represent
 because more labels increase the complexity of the problem. Compared with the result of least squares method, this clustering based method gain a similar performance. This
 may prove that static and dynamic states are not distinct enough when all sensor parameters are taken into account. It is also possible that there are some sensor parameters affected by height, exercise habits, speed of movement or other factors in the different subject states.
 
-     K        2      6
+   
+   K        2       6
 Error Rate  0.472  0.639
 Table 2: Two results for different K values in K-Means algorithm.
 

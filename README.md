@@ -1,4 +1,4 @@
-# A Practice of Classification Experiments on Human Activity Recognition Using Smartphones Dataset
+# Classification Experiments on Human Activity Recognition Using Smartphones Dataset
 
 1	INTRODUCTION
 
